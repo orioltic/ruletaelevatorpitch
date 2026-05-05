@@ -24,8 +24,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build # Cambia a 'dist' si usas Vite
-
+          path: dist
   deploy_site:
     needs: build_site
     runs-on: ubuntu-latest
